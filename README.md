@@ -13,9 +13,9 @@
 - Процесс установки полностью автоматизированный и включает в себя предварительную установку необходимого ПО на HOST машину, клонирование репозитория с описанием образов, сборка образов и запуск контейнеров. Установки может занять длительное время - необходимо запастить терпением.
 - Скопируйте файл `install.sh` на компьютер, с которого собираетесь проводить удаленную установку и запустите его через SSH:
 ```
- curl -L "https://raw.github.com/EvgenyNed/ros_demo_shell/master/install.sh" -o ./install.sh && sudo chmod +x ./install.sh
+    curl -L "https://raw.github.com/EvgenyNed/ros_demo_shell/master/install.sh" -o ./install.sh
  
- cat install.sh  | ssh -T root@hostname
+    cat install.sh  | ssh -T root@hostname
 ```
 
   
