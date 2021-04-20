@@ -14,6 +14,8 @@
 - Выдайте права на исполнение и запустите скрипт через SSH:
 #####   `chmod +x ./install.sh`
 #####   `cat install.sh  | ssh –T root@hostname`
+### Server URL's
+        - Webserver (main) http://localhost:8832
 - После установки запустятся сервисы. К Web приложению можно подключиться `localhost:8832`
         
         ## Usage
