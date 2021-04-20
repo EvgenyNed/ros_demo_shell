@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+
+  nginx:
+    build: nginx/
+    restart: unless-stopped
+    environment:
+      - APP_ENV=demo
+    volumes:
+      - ./logs/nginx:/var/log/nginx
+    ports:
+      - "8832:80"
+    networks:
+      - demo-rosbank
+  app:
+    build: php_apache/
+    restart: unless-stopped
+    scale: 2
+    volumes:
+      - ./php_apache/src/:/var/www/html/
+      - ./logs/apache2:/var/log/apache2
+    networks:
+      - demo-rosbank
+  db:
+    build: db/
+    restart: unless-stopped
+    volumes:
+          - ../pgdata:/var/lib/pgsql/data
+#          - ./logs/pg_log:/var/lib/pgsql/data/pg_log
+    networks:
+      - demo-rosbank
+
+networks:
+  demo-rosbank:

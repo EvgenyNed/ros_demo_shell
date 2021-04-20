@@ -1,0 +1,5 @@
+<Files connection.php>
+<RequireAll>
+Require all denied
+</RequireAll>
+</Files>
