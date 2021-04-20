@@ -1,5 +1,5 @@
-# rosdemo_shell
-Docker LAMP container configured for a Symfony 3+ projects but it can be easily adjusted for any PHP based framework.
+# ros_demo_shell
+Пример простой инфраструктуры, демонстрирующий возможность регистрации и авторизации на сайте и отображение информации из БД на базе микросервисов Apache и PostgreSQL   и балансировкой с помощью NginX.
 
 ## Included software
 - NginX latest
