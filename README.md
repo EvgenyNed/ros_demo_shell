@@ -12,24 +12,9 @@
 ## Установка
 - Скопируйте файл `install.sh` на компьютер, с которого собираетесь проводить удаленную установку
 - Выдайте права на исполнение и запустите скрипт через SSH:
-#####   `chmod +x ./install.sh`
-#####   `cat install.sh  | ssh –T root@hostname`
+        #####   `chmod +x ./install.sh`
+        #####   `cat install.sh  | ssh –T root@hostname`
+- Процесс установки может занять длительное время. После установки запустятся сервисы.        
 ### Server URL's
-        - Webserver (main) http://localhost:8832
-- После установки запустятся сервисы. К Web приложению можно подключиться `localhost:8832`
-        
-        ## Usage
-        ### How to start server
-        `docker-compose run`
-        ### How to login into containers console
-        - Apache: `docker container exec -it apache_container bash`
-        - PHP: `docker container exec -it php_container bash`
-        - MySQL: `docker container exec -it mysql_container bash`
-        - PHPMyAdmin: `docker container exec -it phpmyadmin_container bash`
-        - MailDev: `docker container exec -it maildev_container bash`
-        ### Server URL's
-        - Webserver (main) http://localhost
-        - PHPMyAdmin http://localhost:8080
-        - MailDev http://localhost:8081
-        
-        
+- Webserver (main) `http://localhost:8832`
+      
