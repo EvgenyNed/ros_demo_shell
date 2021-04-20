@@ -12,8 +12,8 @@
 ## Установка
 - Скопируйте файл `install.sh` на компьютер, с которого собираетесь проводить удаленную установку
 - Выдайте права на исполнение и запустите скрипт через SSH:
-        #####   `chmod +x ./install.sh`
-        #####   `cat install.sh  | ssh –T root@hostname`
+#####   `chmod +x ./install.sh`
+#####   `cat install.sh  | ssh –T root@hostname`
 - Процесс установки может занять длительное время. После установки запустятся сервисы.        
 ### Server URL's
 - Webserver (main) `http://localhost:8832`
